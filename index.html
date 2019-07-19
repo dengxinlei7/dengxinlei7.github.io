@@ -94,82 +94,37 @@
     <div class="article-content">
         
         <p><img src="https://s2.ax1x.com/2019/07/19/ZvXZoF.jpg" alt="machine-learning"></p>
-<h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">机器学习，顾名思义，就是让机器去学习，然后机器根据学习到的东西，帮人们进行处理日常生活中的事情，其实本质就是人工智能（AI），去研究如何让计算机从数据学习某种规律，然后将这种规律用于实际。</span><br></pre></td></tr></table></figure>
-
-<h3 id="1、人工智能-机器学习-深度学习？"><a href="#1、人工智能-机器学习-深度学习？" class="headerlink" title="1、人工智能=机器学习=深度学习？"></a>1、人工智能=机器学习=深度学习？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不！简单来说，人工智能不完全是机器学习，机器学习也不完全是深度学习。他们三者是层层真子集的关系。最简单的例子：人为地定义高矮胖瘦不是机器学习，因为我想怎么定义就怎么定义，同样机器学习中简单的线性回归也不属于深度学习。</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、机器学习-大数据-数据挖掘？"><a href="#2、机器学习-大数据-数据挖掘？" class="headerlink" title="2、机器学习=大数据=数据挖掘？"></a>2、机器学习=大数据=数据挖掘？</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">同样，他们是不一样的，他们的关系是存在交集。机器学习可以用大数据来训练，也可以用小数据训练，而数据挖掘是需要从数据中发现信息，也不全是用机器学习来做的。</span><br></pre></td></tr></table></figure>
-
-<h3 id="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："><a href="#3、什么是机器学习，机器学习有什么作用？简单来说，有三点：" class="headerlink" title="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："></a>3、什么是机器学习，机器学习有什么作用？简单来说，有三点：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">•通过计算机程序根据数据去优化某一个评价指标</span><br><span class="line"></span><br><span class="line">•自动的从数据发现规律, 使用这些规律做出预测</span><br><span class="line"></span><br><span class="line">•根据过去预测未来</span><br></pre></td></tr></table></figure>
-
-<h3 id="4、机器学习的家族"><a href="#4、机器学习的家族" class="headerlink" title="4、机器学习的家族"></a>4、机器学习的家族</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">总体来说，机器学习有两类：监督式学习和非监督式学习</span><br><span class="line"></span><br><span class="line">监督式学习主要是：分类和回归（训练数据有明确的输入和预期输出或者标签）</span><br><span class="line"></span><br><span class="line">非监督式学习主要是：聚类（训练数据只有输入，没有预期输出）</span><br><span class="line"></span><br><span class="line">监督式学习(分类)可用于：垃圾邮件/短信检测、自动车牌号识别、人脸识别、手写字符识别、语音识别、医疗图片的病症诊断</span><br><span class="line"></span><br><span class="line">监督式学习(回归)可用于：自动为二手车估价、预测股票价格、预测未来气温、自动驾驶</span><br><span class="line"></span><br><span class="line">非监督式机器学习(聚类)可用于：客户分类(市场研究)、用户分组(社交网络)、图像分割、推荐系统、消除歧义(自然语言处理)</span><br></pre></td></tr></table></figure>
-
-<h3 id="5、做机器学习的流程"><a href="#5、做机器学习的流程" class="headerlink" title="5、做机器学习的流程"></a>5、做机器学习的流程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">简单来说，一共有8个步骤：数据获取、数据清洗、特征工程、预处理、选择机器学习模型、模型训练、模型调参和模型部署。其中模型调参和模型训练要反复进行，以得到一个表现最好的模型。</span><br><span class="line"></span><br><span class="line">数据预处理包括：特征提取、处理缺失数据、数据定标、数据转换（One-Hot encoding, One/Two/MultiGram, Bag of words, 取对数 ）</span><br><span class="line"></span><br><span class="line">特征提取：比如基于图像进行行人检测，需要提取图像的梯度直方图[1]</span><br><span class="line"></span><br><span class="line">处理数据缺失：以Titanic数据集为例, 部分乘客的年龄, 80%乘客的仓位有缺失，常用的处理方式:</span><br><span class="line"></span><br><span class="line">1. 使用均值或者中间值(median)代替数值类型(年龄)的缺失数据</span><br><span class="line"></span><br><span class="line">2. 使用众数(mode)代替分类数据(性别)的缺失数据</span><br><span class="line"></span><br><span class="line">3. 使用聚类的方式, 找到相似的数据点, 使用这些相似数据点的均值等替代缺失数据</span><br><span class="line"></span><br><span class="line">4. 如果某一个特征的数据丢失率太高, 直接丢弃这个特征的数据也许更好</span><br><span class="line"></span><br><span class="line">数据定标：主要是数据的归一化和标准化</span><br></pre></td></tr></table></figure>
-
-<h3 id="课后思考："><a href="#课后思考：" class="headerlink" title="课后思考："></a>课后思考：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1、非监督式机器学习(降维)：例如主成分分析PCA</span><br><span class="line"></span><br><span class="line">2、非监督式机器学习(异常检测)：对不匹配预期模式的识别。异常也被称为离群值、新奇、噪声、偏差和例外</span><br><span class="line"></span><br><span class="line">3、强化学习：基于环境而行动，以取得最大化的预期利益. 强化学习和标准的监督式学习之间的区别在于, 训练数据没有标签，也不需要精确校正每一次优化的行为</span><br><span class="line"></span><br><span class="line">4、强化学习的应用：AlphaGo 下棋、电子游戏、个性化推荐系统、交通灯控制、在线广告投标、机器人控制</span><br></pre></td></tr></table></figure>
-
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2019/07/18/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Xinlei Deng" target="_blank" itemprop="author">Xinlei Deng</a>
-		
-  <p class="article-time">
-    <time datetime="2019-07-18T14:26:35.060Z" itemprop="datePublished"> 发表于 2019-07-18</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><p>机器学习，顾名思义，就是让机器去学习，然后机器根据学习到的东西，帮人们进行处理日常生活中的事情，其实本质就是人工智能（AI），去研究如何让计算机从数据学习某种规律，然后将这种规律用于实际。</p>
+<h3 id="1、人工智能-机器学习-深度学习？"><a href="#1、人工智能-机器学习-深度学习？" class="headerlink" title="1、人工智能=机器学习=深度学习？"></a>1、人工智能=机器学习=深度学习？</h3><p>不！简单来说，人工智能不完全是机器学习，机器学习也不完全是深度学习。他们三者是层层真子集的关系。最简单的例子：人为地定义高矮胖瘦不是机器学习，因为我想怎么定义就怎么定义，同样机器学习中简单的线性回归也不属于深度学习。</p>
+<h3 id="2、机器学习-大数据-数据挖掘？"><a href="#2、机器学习-大数据-数据挖掘？" class="headerlink" title="2、机器学习=大数据=数据挖掘？"></a>2、机器学习=大数据=数据挖掘？</h3><p>同样，他们是不一样的，他们的关系是存在交集。机器学习可以用大数据来训练，也可以用小数据训练，而数据挖掘是需要从数据中发现信息，也不全是用机器学习来做的。</p>
+<h3 id="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："><a href="#3、什么是机器学习，机器学习有什么作用？简单来说，有三点：" class="headerlink" title="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："></a>3、什么是机器学习，机器学习有什么作用？简单来说，有三点：</h3><p>•通过计算机程序根据数据去优化某一个评价指标</p>
+<p>•自动的从数据发现规律, 使用这些规律做出预测</p>
+<p>•根据过去预测未来</p>
+<h3 id="4、机器学习的家族"><a href="#4、机器学习的家族" class="headerlink" title="4、机器学习的家族"></a>4、机器学习的家族</h3><p>总体来说，机器学习有两类：监督式学习和非监督式学习</p>
+<p>监督式学习主要是：分类和回归（训练数据有明确的输入和预期输出或者标签）</p>
+<p>非监督式学习主要是：聚类（训练数据只有输入，没有预期输出）</p>
+<p>监督式学习(分类)可用于：垃圾邮件/短信检测、自动车牌号识别、人脸识别、手写字符识别、语音识别、医疗图片的病症诊断</p>
+<p>监督式学习(回归)可用于：自动为二手车估价、预测股票价格、预测未来气温、自动驾驶</p>
+<p>非监督式机器学习(聚类)可用于：客户分类(市场研究)、用户分组(社交网络)、图像分割、推荐系统、消除歧义(自然语言处理)</p>
+<h3 id="5、做机器学习的流程"><a href="#5、做机器学习的流程" class="headerlink" title="5、做机器学习的流程"></a>5、做机器学习的流程</h3><p>简单来说，一共有8个步骤：数据获取、数据清洗、特征工程、预处理、选择机器学习模型、模型训练、模型调参和模型部署。其中模型调参和模型训练要反复进行，以得到一个表现最好的模型。</p>
+<p>数据预处理包括：特征提取、处理缺失数据、数据定标、数据转换（One-Hot encoding, One/Two/MultiGram, Bag of words, 取对数 ）</p>
+<p>特征提取：比如基于图像进行行人检测，需要提取图像的梯度直方图[1]</p>
+<p>处理数据缺失：以Titanic数据集为例, 部分乘客的年龄, 80%乘客的仓位有缺失，常用的处理方式:</p>
+<ol>
+<li><p>使用均值或者中间值(median)代替数值类型(年龄)的缺失数据</p>
+</li>
+<li><p>使用众数(mode)代替分类数据(性别)的缺失数据</p>
+</li>
+<li><p>使用聚类的方式, 找到相似的数据点, 使用这些相似数据点的均值等替代缺失数据</p>
+</li>
+<li><p>如果某一个特征的数据丢失率太高, 直接丢弃这个特征的数据也许更好</p>
+</li>
+</ol>
+<p>数据定标：主要是数据的归一化和标准化</p>
+<h3 id="课后思考："><a href="#课后思考：" class="headerlink" title="课后思考："></a>课后思考：</h3><p>1、非监督式机器学习(降维)：例如主成分分析PCA</p>
+<p>2、非监督式机器学习(异常检测)：对不匹配预期模式的识别。异常也被称为离群值、新奇、噪声、偏差和例外</p>
+<p>3、强化学习：基于环境而行动，以取得最大化的预期利益. 强化学习和标准的监督式学习之间的区别在于, 训练数据没有标签，也不需要精确校正每一次优化的行为</p>
+<p>4、强化学习的应用：AlphaGo 下棋、电子游戏、个性化推荐系统、交通灯控制、在线广告投标、机器人控制</p>
 
         
         
