@@ -79,16 +79,25 @@
 
 
 
-<meta name="description" content="State University of New York at Albany, Department of Environmental Health Science">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xinlei Deng&#39;s project repository">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany 使用决策树和随机森林预测员工离职率我们的任务是帮助人事">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DecisionTree&amp;RandomForest">
+<meta property="og:url" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/index.html">
 <meta property="og:site_name" content="Xinlei Deng&#39;s project repository">
-<meta property="og:description" content="State University of New York at Albany, Department of Environmental Health Science">
+<meta property="og:description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany 使用决策树和随机森林预测员工离职率我们的任务是帮助人事">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_16_1.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_22_2.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_23_1.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_24_1.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_30_0.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_32_0.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_33_0.png">
+<meta property="og:updated_time" content="2019-09-21T19:37:25.628Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xinlei Deng&#39;s project repository">
-<meta name="twitter:description" content="State University of New York at Albany, Department of Environmental Health Science">
+<meta name="twitter:title" content="DecisionTree&amp;RandomForest">
+<meta name="twitter:description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany 使用决策树和随机森林预测员工离职率我们的任务是帮助人事">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/images/output_16_1.png">
 
 
 
@@ -118,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/21/DecisionTree.RandomForest/">
 
 
 
 
 
-  <title>Xinlei Deng's project repository</title>
+  <title>DecisionTree&RandomForest | Xinlei Deng's project repository</title>
   
 
 
@@ -143,8 +152,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -257,9 +265,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -289,9 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/21/DecisionTree.RandomForest/" itemprop="url">DecisionTree&RandomForest</a></h1>
+          <h1 class="post-title" itemprop="name headline">DecisionTree&RandomForest</h1>
         
 
         <div class="post-meta">
@@ -374,9 +380,7 @@
       
 
       
-        
-          
-            <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
+        <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
 <h1 id="使用决策树和随机森林预测员工离职率"><a href="#使用决策树和随机森林预测员工离职率" class="headerlink" title="使用决策树和随机森林预测员工离职率"></a>使用决策树和随机森林预测员工离职率</h1><p>我们的任务是帮助人事部门理解员工为何离职, 预测一个员工离职的可能性.<br>数据来源: <a href="https://www.kaggle.com/ludobenistant/hr-analytics" target="_blank" rel="noopener">https://www.kaggle.com/ludobenistant/hr-analytics</a></p>
 <h1 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 引入工具包</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib <span class="keyword">as</span> matplot</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line">%matplotlib inline</span><br></pre></td></tr></table></figure>
 
@@ -1132,8 +1136,6 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -1150,196 +1152,28 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/21/base-code/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xinlei Deng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xinlei Deng's project repository">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/21/base-code/" itemprop="url">base code</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-21T15:03:19-04:00">
-                2019-09-21
-              </time>
+              <a href="/2019/09/21/base-code/" rel="next" title="base code">
+                <i class="fa fa-chevron-left"></i> base code
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Rcode/" itemprop="url" rel="index">
-                    <span itemprop="name">Rcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/09/21/base-code/" class="leancloud_visitors" data-flag-title="base code">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
-<h1 id="data-process"><a href="#data-process" class="headerlink" title="data process"></a>data process</h1><p>a&lt;-as.data.frame(matrix(c(1:6),nrow=2,ncol=3,dimnames=list(c(“r1”,”r2”),c(“c1”,”c2”,”c3”))))<br>b&lt;-as.data.frame(matrix(c(1,2,4,5,6,7,8,8,9),nrow=3,ncol=3,dimnames=list(c(“r1”,”r2”,’r3’),c(“c1”,”c4”,”c5”))))<br>c&lt;-merge(a,b, by=’c1’,all=T)<br>d&lt;-rbind.fill(a,b)<br>e&lt;-cbind.fill(a,b)</p>
-<h1 id="heatmap"><a href="#heatmap" class="headerlink" title="heatmap"></a>heatmap</h1><p>require(graphics); require(grDevices)<br>x  &lt;- as.matrix(mtcars)<br>rc &lt;- rainbow(nrow(x), start = 0, end = .3)<br>cc &lt;- rainbow(ncol(x), start = 0, end = .3)<br>hv &lt;- heatmap(x, col = cm.colors(256), scale = “column”,<br>              RowSideColors = rc, ColSideColors = cc, margins = c(5,10),<br>              xlab = “specification variables”, ylab =  “Car Models”,<br>              main = “heatmap(<mtcars data>, …, scale = &quot;column&quot;)”)</mtcars></p>
-<p>data&lt;-read.csv(‘machine learning heatmap.csv’)</p>
-<p>data&lt;-x<br>library(gplots)<br>library(ggplot2)<br>rc &lt;- rainbow(nrow(data), start = 0, end = .3)<br>cc &lt;- rainbow(ncol(data), start = 0, end = .3)<br>hv&lt;-heatmap.2(x, col = cm.colors(256),<br>              xlab = “specification variables”, ylab =  “Car Models”)<br>data&lt;-as.data.frame(data)<br>p &lt;- ggplot(data,,colour = “white”) + scale_fill_gradient(low = “white”,high = “steelblue”)</p>
-<p>data&lt;-as.matrix(data)<br>hv &lt;- heatmap.2(x, col = cm.colors(256), scale = “column”,<br>                RowSideColors = rc, ColSideColors = cc, margins = c(5,10),<br>                xlab = “specification variables”, ylab =  “Car Models”,<br>                main = “heatmap(<mtcars data>, …, scale = &quot;column&quot;)”)</mtcars></p>
-<p>library(pheatmap)<br>a&lt;-pheatmap(data,<br>            main = ‘AUC’,<br>            cluster_col=FALSE,<br>            cluster_rows=FALSE,<br>            cellwidth=80,<br>            cellheight=30,<br>            legend=T,<br>            color=colorRampPalette(c(“navy”, “white”, “firebrick3”))(1000),<br>            border_color=F,<br>            fontsize=10,<br>            fontsize_row=12,<br>            fontsize_col=12,<br>            annotation_legend=TRUE,<br>            display_numbers=TRUE,<br>            number_format=”%.4f”,<br>            filename = ‘1.png’,<br>            legend= “bottom”,<br>            angle_col = 0,<br>            labels_row = ‘F’<br>            width=6,<br>            height=6)<br>)</p>
-<h1 id="change-value"><a href="#change-value" class="headerlink" title="change value"></a>change value</h1><p>SDQ[TD&lt;=14, TDclass:=0]<br>SDQ[(TD&gt;14&amp;TD&lt;17), TDclass:=1]<br>SDQ[TD&gt;16, TDclass:=2]<br>data[ is.na(health),       health:= 0]<br>data&lt;- data[ !is.na(id) ]<br>w[is.na(w$C4),’C4’]&lt;-median(w$C4,na.rm = T)<br>newdata$BP[which(newdata$BP == “NA”)] &lt;- NA</p>
-<h1 id="Checking-duplicated"><a href="#Checking-duplicated" class="headerlink" title="Checking duplicated"></a>Checking duplicated</h1><p>data[, dup:= .N, by = “name” ]<br>data[ dup &gt; 1, dup:= .N, by = c(“name”, “id”) ]<br>data[, dup2:= 1 ][ dup &gt; 1 &amp; !is.na(id),<br>                          dup2:= cumsum(dup2),<br>                          by = c(“name”, “id”) ]<br>data &lt;- data[ dup2 == 1 ]<br>dt[, dup2:= NULL ]</p>
-<p>dt[ dup &gt; 1 &amp; !is.na(id), dup:= .N,<br>        by = c(“name”, “id”) ]</p>
-<p>dt[ dup &gt; 1 &amp; !is.na(address),<br>        dup:= .N, by = c(“name”, “address”) ] </p>
-<p>dt[, dup2:= 1 ][ dup &gt; 1, dup2:= cumsum(dup2),<br>                          by = c(“name”, “num”) ]</p>
-<p>dt &lt;- dt[ dup2 == 1 ]<br>dt[, dup2:= NULL ]<br>dt[ dup &gt; 1, dup:= .N,<br>        by = c(“name”, “num”) ]</p>
-<h1 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h1><p>cat(“\n\n”, “Creating”, file.names[i], “\n”)<br>cat(“  - Final number “, “N = “, n[i], “\n”)<br>cat(“  - Deleted  - duplicated names”, “ N = “, ndup[i], “\n”)<br>cat(“  - Deleted - 0 d”, “        N = “, nwith.0[i], “\n\n”)</p>
-<h1 id="cycle"><a href="#cycle" class="headerlink" title="cycle"></a>cycle</h1><p>for( i in 1:4 ){}</p>
-<h1 id="if"><a href="#if" class="headerlink" title="if"></a>if</h1><p>if(cond) expr<br>if(cond) {expr}</p>
-<p>if(cond){<br>  1<br>} else {<br>  2<br>  }</p>
-<h1 id="rename"><a href="#rename" class="headerlink" title="rename"></a>rename</h1><p>colnames(d4.1)[2]&lt;-‘study_id’<br>rownames(d4.1)[2]&lt;-‘study_id’</p>
-<h1 id="string"><a href="#string" class="headerlink" title="string"></a>string</h1><p>nchar(dgr$time[1])<br>substr(dgr$time[1],5,10)<br>nchar() #num of char<br>strsplit() #split str<br>b&lt;-strsplit(unlist(a)[seq(from=2,to=length(a),by=2)],”[.]”)<br>b&lt;-unlist(b)[seq(from=1,to=length(b),by=2)]<br>paste()<br>substr() # extract str<br>gsub() chartr() sub() #replace str<br>grep() #str match<br>toupper() tolower() # letter &amp; capital exchange</p>
-<p>cha1&lt;-c(“a1”,”b23”,”c4”,”d56”,”e”,”f4”)#extract numbers<br>library(stringr)<br>col1&lt;-str_extract_all(cha1,”\d”)<br>gsub(“[^0-9]”,””,cha1)<br>nchar(gsub(“[^0-9]”,””,cha1))</p>
-<p>a[42:61]&lt;-lapply(a[42:61], FUN = function(a){<br>  gsub(‘[^A-Z]’,’’,a)<br>})</p>
-<h1 id="read-many-files-at-the-same-time"><a href="#read-many-files-at-the-same-time" class="headerlink" title="read many files at the same time"></a>read many files at the same time</h1><p>filelist &lt;- list.files(pattern=”.*.csv”)<br>a&lt;-dir(pattern=’.xlsx’,full.names = T)</p>
-<h1 id="change-data-type"><a href="#change-data-type" class="headerlink" title="change data type"></a>change data type</h1><p>sapply()<br>datain[cols]&lt;-sapply(datain[cols],FUN = as.factor)<br>lapply()<br>dos4[,16:22]&lt;-lapply(dos4[,16:22],factor)</p>
-<h1 id="data-preparation-example"><a href="#data-preparation-example" class="headerlink" title="data preparation example"></a>data preparation example</h1><p>data&lt;-read_excel(‘data.xlsx’,<br>                1,<br>                col_types = c(“guess”,<br>                              “text”,<br>                              “text”,<br>                              “guess”,<br>                              “guess”,<br>                              “guess”,<br>                              “guess”,<br>                              “guess”,<br>                              “guess”))<br>data$d_inputdate&lt;-as.character(data$d_inputdate)<br>feature&lt;-c(‘date’,’id’,’x1’)<br>result&lt;-matrix(ncol = ncol(data))<br>result&lt;-as.data.frame(result)<br>colnames(result)&lt;-colnames(data)<br>result$d&lt;-as.character(result$d)<br>result$c&lt;-as.character(result$c)<br>m=0<br>for (i in 1:nrow(data)){<br>  x=data[i,’c_itemcode’]<br>  if (x==’C’|x==’F’|x==’F0’|x==’0’){<br>    m=m+1<br>    result[m,]&lt;-data[i,]<br>  }<br>}</p>
-<p>a&lt;-unique(result[,1:2],by=’c_samplenum’)<br>a[,3:8]&lt;-0<br>colnames(a)&lt;-feature<br>a$FE&lt;-result[which(result$c_itemcode==’FE’),’n_value1’]</p>
-<p>write.xlsx(a,’end.xlsx’)</p>
-<h1 id="create-variables-in-cycle"><a href="#create-variables-in-cycle" class="headerlink" title="create variables in cycle"></a>create variables in cycle</h1><p>r&lt;-c(paste0(‘result’,1:6))<br>assign(r[1],as.data.frame(a[,1:3]))</p>
-<h1 id="eval"><a href="#eval" class="headerlink" title="eval"></a>eval</h1><p>eval(parse(text = c(‘b=1’)))</p>
-<h1 id="change-file-names-in-batch"><a href="#change-file-names-in-batch" class="headerlink" title="change file names in batch"></a>change file names in batch</h1><p>folder &lt;- “C:\Users\XinleiDeng\Desktop\2016\hiv”<br>folder1&lt;- “C:\Users\XinleiDeng\Desktop\2016”<br>files &lt;- list.files(folder)<br>files1&lt;-list.files(folder1)<br>p&lt;-201600<br>j&lt;-‘.xls’<br>i=1<br>files &lt;- list.files(folder)</p>
-<p>for (ff in files1) {<br>  folder&lt;-paste0(“C:\Users\XinleiDeng\Desktop\2016\“,ff)<br>  p&lt;-201600<br>  j&lt;-‘.xls’<br>  for(f in files){<br>    p=p+1<br>    newname &lt;- paste0(ff,p,j)<br>    file.rename(paste0(folder,’\‘,f),paste0(folder,’\‘,newname))<br>  }<br>}</p>
-<h1 id="order"><a href="#order" class="headerlink" title="order"></a>order</h1><p>indd&lt;-c(12,1,4,5,6,7,8,9,10,11,2,3)<br>files&lt;-files[indd]<br>files</p>
-<p>files1[i]<br>files&lt;-files[-1]<br>sort(files,decreasing = T)<br>files&lt;-files(order(files,decreasing = T))</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1349,527 +1183,11 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/21/school-project/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xinlei Deng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xinlei Deng's project repository">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/21/school-project/" itemprop="url">school project</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-21T14:29:14-04:00">
-                2019-09-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Rcode/" itemprop="url" rel="index">
-                    <span itemprop="name">Rcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/09/21/school-project/" class="leancloud_visitors" data-flag-title="school project">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
-<h1 id="preparation"><a href="#preparation" class="headerlink" title="preparation"></a>preparation</h1><p>library(mice)<br>library(h2o)<br>library(VIM)<br>library(openxlsx)<br>library(tidyverse)<br>h2o.init()<br>school &lt;- select(school,-c(x1,x2,x3))<br>imp&lt;-mice(school[c(1:92)],m=10,maxit = 10,seed = 666)</p>
-<h1 id="crude-OR"><a href="#crude-OR" class="headerlink" title="crude OR"></a>crude OR</h1><p>txt&lt;-colnames(school)[5:91]<br>txt_v=c(‘y1’,’y2’)<br>a &lt;- c()</p>
-<p>for (i in 1:length(txt)) {<br>  for (j in 1:2) {<br>    fit &lt;- with(data = imp, exp = glm(formula = formula(paste0(txt_v[j],’~’,txt[i])),<br>                                      family = binomial(link=’logit’)))<br>    b&lt;-summary(pool(fit))<br>    b$OR&lt;-exp(b$estimate)<br>    b$lowOR&lt;-exp(b$estimate-1.96<em>b$std.error)<br>    b$upOR &lt;- exp(b$estimate+1.96</em>b$std.error)<br>    assign(txt_v[j],b)<br>  }<br>  a&lt;-rbind(a,cbind(y1,y2))<br>}<br>d=c()<br>for (k in 1:nrow(a)) {<br>  if(substr(rownames(a[k,]),start = 1,stop = 11)==’(Intercept)’){<br>    d&lt;-c(d,k)<br>  }<br>}<br>c&lt;-a[-d,]<br>write.xlsx(c,’OR.xlsx’,row.names=T)</p>
-<h1 id="variable-selection"><a href="#variable-selection" class="headerlink" title="variable selection"></a>variable selection</h1><p> for (i in 1:10) {<br>  a&lt;-mice::complete(imp,action = i)<br>  set.seed(3<em>i)<br>  a$RAN1&lt;-rbinom(85,1,0.5)<br>  set.seed(3</em>i+1)<br>  a$RAN2&lt;-rbinom(85,1,0.5)<br>  set.seed(3<em>i+2)<br>  a$RAN3&lt;-rbinom(85,1,0.5)<br>  ah2o&lt;-as.h2o(a)<br>  ah2o[,1] &lt;- as.factor(ah2o[,1])<br>  rf&lt;-h2o.randomForest(y=1,x=c(3:95),training_frame = ah2o,nfolds = 10,<br>                        ntrees=100,seed =100</em>i<br>  )<br>   assign(paste0(‘f’,i),h2o.varimp(rf))<br> }<br> rf_result&lt;-merge(f1,f2,by=’variable’)<br> for (j in 3:10) {<br>   eval(parse(text=paste0(“rf_result&lt;-merge(rf_result,f”,j,”,by=’variable’ )”)))<br> }<br>rf_result$mean &lt;- base::apply(rf_result[,seq(4,31,by=3)],MARGIN =1,mean)<br>rf_result &lt;- rf_result[order(rf_result$mean,decreasing = T),]<br>write.xlsx(rf_result,’rf_result_y1.xlsx’)</p>
-<p> for (i in 1:10) {<br>  a&lt;-mice::complete(imp,action = i)<br>  set.seed(3<em>i)<br>  a$RAN1&lt;-rbinom(85,1,0.5)<br>  set.seed(3</em>i+1)<br>  a$RAN2&lt;-rbinom(85,1,0.5)<br>  set.seed(3<em>i+2)<br>  a$RAN3&lt;-rbinom(85,1,0.5)<br>  ah2o&lt;-as.h2o(a)<br>  ah2o[,2] &lt;- as.factor(ah2o[,2])<br>  rf&lt;-h2o.randomForest(y=2,x=c(3:95),training_frame = ah2o,nfolds = 10,<br>                        ntrees=100,seed =100</em>i<br>  )<br>   assign(paste0(‘f’,i),h2o.varimp(rf))<br> }<br> rf_result&lt;-merge(f1,f2,by=’variable’)<br> for (j in 3:10) {<br>   eval(parse(text=paste0(“rf_result&lt;-merge(rf_result,f”,j,”,by=’variable’ )”)))<br> }<br>rf_result$mean &lt;- base::apply(rf_result[,seq(4,31,by=3)],MARGIN =1,mean)<br>rf_result &lt;- rf_result[order(rf_result$mean,decreasing = T),]<br>write.xlsx(rf_result,’rf_result_y2.xlsx’)</p>
-<p>rf_result &lt;- read.xlsx(‘P:/Staff/Xinlei Deng/school/results/rf_result1_asthma.xlsx’)<br>rf_result &lt;- na.omit(rf_result)[c(1,3)]<br>rf_result[1,1] &lt;- ‘age’<br>rf_result &lt;- rf_result[order(rf_result[,2],decreasing = T),]<br>rf_result$variable = factor(rf_result$variable, levels=rf_result[,1])</p>
-<h1 id="barplot"><a href="#barplot" class="headerlink" title="barplot"></a>barplot</h1><p>rf_result &lt;-read.xlsx()<br>rf_result &lt;- na.omit(rf_result)[c(1,3)]<br>rf_result &lt;- rf_result[order(rf_result[,2],decreasing = T),]<br>rf_result$variable = factor(rf_result$variable, levels=rf_result[,1])<br>p &lt;- ggplot(data = rf_result, aes(x = variable, y = mean)) +<br>  geom_bar(stat = “identity”, fill = “steelblue”)+<br>  +geom_text(aes(label =format(mean,digits = 2)),vjust = 1.6,color = “black”,size = 3.5)<br>  theme_minimal()+<br>  xlab(‘Asthma Symptom Features’)+ylab(‘Feature importance percentage’)+<br>  theme(axis.text.x = element_text(size = 15,angle = 90),axis.text.y = element_text(size=15),<br>        axis.title.x =element_text(size = 15),axis.title.y =element_text(size = 15) )<br>p<br>ggsave(‘y1.png’,dpi = 400,height =6,limitsize = F)</p>
-<h1 id="barplot-twisted"><a href="#barplot-twisted" class="headerlink" title="barplot twisted"></a>barplot twisted</h1><p>data &lt;- rf_result<br>empty_bar=3<br>to_add = data.frame( matrix(NA, empty_bar*nlevels(data$group), ncol(data)) )<br>colnames(to_add) = colnames(data)<br>to_add$group=rep(levels(data$group), each=empty_bar)<br>data=rbind(data, to_add)<br>data=data %&gt;% arrange(group)<br>data$id=seq(1, nrow(data))<br>data<br>label_data=data<br>number_of_bar=nrow(label_data)<br>angle= 90 - 360 * (label_data$id-0.5) /number_of_bar     # I substract 0.5 because the letter must have the angle of the center of the bars. Not extreme right(1) or extreme left (0)<br>label_data$hjust&lt;-ifelse( angle &lt; -90, 1, 0)<br>label_data$angle&lt;-ifelse(angle &lt; -90, angle+180, angle)</p>
-<p>base_data=data %&gt;%<br>  group_by(group) %&gt;%<br>  summarize(start=min(id), end=max(id) - empty_bar) %&gt;%<br>  rowwise() %&gt;%<br>  mutate(title=mean(c(start, end)))</p>
-<p>grid_data = base_data<br>grid_data$end = grid_data$end[ c( nrow(grid_data), 1:nrow(grid_data)-1)] + 1<br>grid_data$start = grid_data$start - 1<br>grid_data=grid_data[-1,]</p>
-<p>p = ggplot(data, aes(x=as.factor(id), y=value, fill=group)) +       # Note that id is a factor. If x is numeric, there is some space between the first bar</p>
-<p>  geom_bar(aes(x=as.factor(id), y=value, fill=group), stat=”identity”, alpha=0.5) +<br>  geom_segment(data=grid_data, aes(x = end, y = 80, xend = start, yend = 80), colour = “grey”, alpha=1, size=0.3 , inherit.aes = FALSE ) +<br>  geom_segment(data=grid_data, aes(x = end, y = 60, xend = start, yend = 60), colour = “grey”, alpha=1, size=0.3 , inherit.aes = FALSE ) +<br>  geom_segment(data=grid_data, aes(x = end, y = 40, xend = start, yend = 40), colour = “grey”, alpha=1, size=0.3 , inherit.aes = FALSE ) +<br>  geom_segment(data=grid_data, aes(x = end, y = 20, xend = start, yend = 20), colour = “grey”, alpha=1, size=0.3 , inherit.aes = FALSE ) +<br>  annotate(“text”, x = rep(max(data$id),4), y = c(20, 40, 60, 80), label = c(“20”, “40”, “60”, “80”) , color=”grey”, size=3 , angle=0, fontface=”bold”, hjust=1) +</p>
-<p>  geom_bar(aes(x=as.factor(id), y=value, fill=group), stat=”identity”, alpha=0.5) +<br>  ylim(-100,120) +<br>  theme_minimal() +<br>  theme(<br>    legend.position = “none”,<br>    axis.text = element_blank(),<br>    axis.title = element_blank(),<br>    panel.grid = element_blank(),<br>    plot.margin = unit(rep(-1,4), “cm”)<br>  ) +<br>  coord_polar() +<br>  geom_text(data=label_data, aes(x=id, y=value+10, label=individual, hjust=hjust), color=”black”, fontface=”bold”,alpha=0.6, size=2.5, angle= label_data$angle, inherit.aes = FALSE ) +<br>  geom_segment(data=base_data, aes(x = start, y = 0, xend = end, yend = 0), colour = “black”, alpha=0.8, size=0.6 , inherit.aes = FALSE )  +<br>  geom_text(data=base_data, aes(x = title, y = -18, label=group), hjust=c(1,1,0,0), colour = “black”, alpha=0.8, size=4, fontface=”bold”, inherit.aes = FALSE)</p>
-<p>p</p>
-<p>tmp &lt;- rf_result<br>empty_bar=5<br>to_add = matrix(NA, empty_bar, ncol(tmp))<br>colnames(to_add) = colnames(tmp)<br>tmp=rbind(tmp, to_add)<br>tmp$id=seq(1, nrow(tmp))<br>label_tmp=tmp<br>number_of_bar=nrow(label_tmp)<br>angle= 90 - 360 * (label_tmp$id-0.5) /number_of_bar     # I substract 0.5 because the letter must have the angle of the center of the bars. Not extreme right(1) or extreme left (0)<br>label_tmp$hjust&lt;-ifelse( angle &lt; -90, 1, 0)<br>label_tmp$angle&lt;-ifelse(angle &lt; -90, angle+180, angle)<br>label_tmp$position &lt;- ifelse(label_tmp$direction&lt;0,0,label_tmp$direction)</p>
-<p>base_data=tmp %&gt;%<br>  summarize(start=min(id), end=max(id) - empty_bar) %&gt;%<br>  rowwise() %&gt;%<br>  mutate(title=mean(c(start, end)))</p>
-<p>ggplot(tmp, aes(x=as.factor(id), y=direction)) +       # Note that id is a factor. If x is numeric, there is some space between the first bar<br>  geom_bar(stat=”identity”, fill=alpha(“#69b3a2”, 1)) +<br>  ylim(-50,50) +<br>  theme_minimal() +<br>  theme(<br>    axis.text = element_blank(),<br>    axis.title = element_blank(),<br>    panel.grid = element_blank(),<br>    plot.margin = unit(rep(-1,4), “cm”)<br>  ) +<br>  coord_polar(start = 0) +<br>  geom_text(data=label_tmp, aes(x=id, y=position+2, label=variable), color=”black”, fontface=”bold”,alpha=0.6, size=2, angle= label_tmp$angle, hjust=label_tmp$hjust, inherit.aes = FALSE ) +<br>  geom_text( aes(x=13, y=50, label=”Asthma Symptom Features Importance”), color=”black”, inherit.aes = FALSE)+<br>  annotate(“text”, x = rep(max(tmp$id),5), y = c(-50, -25,0,25, 50), label = c(“-50”, “-25”,”0”, “25”, “50”) , color=”grey”, size=1.5 , angle=0, fontface=”bold”, hjust=0)+<br>  geom_segment(data=base_data, aes(x = start-0.5, y =0, xend = end+0.5, yend =0), colour = “black”, alpha=0.8, size=0.6 , inherit.aes = FALSE ) +<br>  annotate(“text”, x = 25.7, y = c(50), label = c(‘Features Relative Importance’) , color=”black”, size=2.2 , angle=96, fontface=”bold”, hjust=1)<br>  % theme_minimal()+<br>  % xlab(‘Allergy Symptom Features’)+ylab(‘Feature importance percentage’)<br>% geom_text(data=base_data, aes(x = title, y = -18, label=group), hjust=c(1,1,0,0), colour = “black”, alpha=0.8, size=4, fontface=”bold”, inherit.aes = FALSE)</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/21/MS-project/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xinlei Deng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xinlei Deng's project repository">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/09/21/MS-project/" itemprop="url">MS project</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-21T14:19:30-04:00">
-                2019-09-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Rcode/" itemprop="url" rel="index">
-                    <span itemprop="name">Rcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/09/21/MS-project/" class="leancloud_visitors" data-flag-title="MS project">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
-<p>library(survminer)<br>library(survival)<br>library(rms)<br>library(tidyverse)</p>
-<h1 id="simple-summray-of-survival-data"><a href="#simple-summray-of-survival-data" class="headerlink" title="simple summray of survival data"></a>simple summray of survival data</h1><p>model=survfit(Surv(time,y)~1,data=data)<br>summary(model,times=365)<br>summary(model,times=365<em>3)<br>summary(model,times=365</em>5)<br>summary(model,times=365*10)</p>
-<h1 id="univariate-analysis"><a href="#univariate-analysis" class="headerlink" title="univariate analysis"></a>univariate analysis</h1><p>data[c(4,5,7,8,11:23,25:27,42:44)] &lt;- lapply(data[c(4,5,7,8,11:23,25:27,42:44)],as.factor)<br>output=NULL<br>for(i in 4:ncol(data)){<br>    uni1=coxph(Surv(time,y)~data[,i],data = data)<br>    med=summary(uni1)<br>    b=sprintf(“%.3f”,round(med$conf.int[,1],3))<br>    c=sprintf(“%.3f”,round(med$conf.int[,3],3))<br>    d=sprintf(“%.3f”,round(med$conf.int[,4],3))<br>    pvalue=sprintf(“%.3f”,med$waldtest[3])<br>    e &lt;- paste0(b,”(“,c,”, “,d,”)”)<br>    a &lt;- colnames(data)[i] %&gt;% cbind(.,e) %&gt;%cbind(.,NA)<br>    colnames(a) &lt;- c(‘variables’,’HR(95%CI)’,’pvalue’)<br>    a[,3][nrow(a)] &lt;- pvalue<br>    output=rbind(output,a)<br>    }<br>write.csv(output,”univariate analysis.csv”,row.names=F)</p>
-<h1 id="multivariate-analysis"><a href="#multivariate-analysis" class="headerlink" title="multivariate analysis"></a>multivariate analysis</h1><p>library(mice)<br>library(norm)<br>imp &lt;- mice(data[c(2,3,a)],seed = 123,maxit = 50,m=10)<br>med=Surv(time, y) ~ X1+X2+X3<br>imp.data &lt;- as.list(1:10)<br>for (i in 1:10) {<br>  imp.data[[i]] &lt;- complete(imp,action = i)<br>}<br>imp.cox &lt;- lapply(imp.data, FUN=function(u){<br>  coxph(formula = med,data = u)})<br>imp.parmmat &lt;- sapply(imp.cox,coefficients)<br>minparm &lt;- apply(imp.parmmat,1,min)<br>maxparm &lt;- apply(imp.parmmat,1,max)<br>imp.parms &lt;- lapply(imp.cox,coefficients)<br>imp.ses &lt;- lapply(imp.cox,FUN=function(u){<br>   sqrt(diag(u$var))})<br>mi.parms &lt;- mi.inference(imp.parms,imp.ses,confidence=0.95)<br>mi.results &lt;- cbind(exp(mi.parms$est),mi.parms$std.err,mi.parms$lower,mi.parms$upper,<br>                    mi.parms$df,mi.parms$signif,minparm,maxparm,mi.parms$fminf)<br>colnames(mi.results) &lt;- c(“Est”,”StdErr”,”Lower”,”Upper”,”DF”,”P-values”,”Min”,”Max”,”fminf”)<br>mi.results<br>write.csv(mi.results,’Multivariate analysis for Y.csv’)</p>
-<p>data1 &lt;- complete(imp,action = 2)<br>a1=selectCox(med,data=data1)<br>a1</p>
-<h1 id="nomogram"><a href="#nomogram" class="headerlink" title="nomogram"></a>nomogram</h1><p>dd&lt;-datadist(data1)<br>options(datadist=”dd”)<br>outcome.time=data1$time<br>outcome=data1$y<br>f=cph(med,data = data1,x=T,y=T,surv=T,time.inc=1)<br>nom&lt;-nomogram(f,fun=list(function(x) surv(360<em>5,x),function(x) surv(360</em>10,x)),<br>fun.at=c(.01,seq(.1,.9,by=.2),.95,.99,.999),<br>lp=F,<br>funlabel=c(“5 year outcome probability”,”10 year outcome probability”))<br>tiff(“Nomo-outcome.tiff”,type=”cairo”,units=”in”,width=10,height=9,pointsize=12,res=100)<br>plot(nom)<br>dev.off()</p>
-<h1 id="c-index"><a href="#c-index" class="headerlink" title="c_index"></a>c_index</h1><p>nomo_pre1&lt;-predict(f)<em>(-1)<br>c_index=rcorrcens(Surv(OS.time,OS)~nomo_pre1)<br>a=round(c_index[1]+1.96</em>c_index[4],2)<br>b=round(c_index[1]-1.96*c_index[4],2)<br>c=round(c_index[1],2)<br>paste(c,”(“,b,”, “,a,”)”,sep=””)</p>
-<h1 id="calibrate"><a href="#calibrate" class="headerlink" title="calibrate"></a>calibrate</h1><p>set.seed(666)<br>f=cph(med,data = data1,x=T,y=T,surv=T,time.inc=3<em>365)<br>cal1&lt;-calibrate(f,cmethod=”KM”,method=”boot”,u=3</em>365,m=round(nrow(data1)/5),B=1000)<br>tiff(“Nomo-outcomecalibrate3.tiff”,type=”cairo”,units=”in”,width=10,height=7,pointsize=12,res=100)<br>plot(cal1,lwd=2,lty=1,errbar.col=c(rgb(0,118,192,maxColorValue=255)),xlim=c(0.5,0.95),ylim=c(0.5,1),<br>     xlab=”Nomogram-Predicted Probability of 3-Year Survival (%)”,ylab=”Observed 3-Year Survival (%)”,<br>     col=c(rgb(192,98,83,maxColorValue=255)))<br>lines(cal1[,c(“mean.predicted”,”KM”)],type=”b”,lwd=2,col=c(rgb(192,98,83,maxColorValue=255)),pch=16)<br>abline(0,1,lty=3,lwd=2,col=c(rgb(0,118,192,maxColorValue=255)))<br>dev.off()</p>
-<h1 id="survival-plot"><a href="#survival-plot" class="headerlink" title="survival plot"></a>survival plot</h1><p>model=survfit(Surv(time,y)~x,data=data)<br>pic=ggsurvplot(model,data=data,font.tickslab=20,font.legend=20,fun=”pct”,surv.scale=”default”,conf.int.fill=NA,legend=c(0.75,0.4),legend.title=””,break.x.by=12,legend.labs=c(“x1”,”x2”),<br>risk.table=”nrisk_cumcensor”,risk.table.fontsize=5,palette = “jco”,tables.height = 0.2, risk.table.x.text = FALSE,risk.table.y.text = FALSE,<br>tables.theme = theme_cleantable())</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/19/overview of machine-learning/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xinlei Deng">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xinlei Deng's project repository">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/19/overview of machine-learning/" itemprop="url">overview of machine-learning</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-19T17:35:49-04:00">
-                2019-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/statistics/" itemprop="url" rel="index">
-                    <span itemprop="name">statistics</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/07/19/overview of machine-learning/" class="leancloud_visitors" data-flag-title="overview of machine-learning">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
-<p><img src="https://s2.ax1x.com/2019/07/19/ZvXZoF.jpg" alt="machine-learning"></p>
-<h2 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h2><p>机器学习，顾名思义，就是让机器去学习，然后机器根据学习到的东西，帮人们进行处理日常生活中的事情，其实本质就是人工智能（AI），去研究如何让计算机从数据学习某种规律，然后将这种规律用于实际。</p>
-<h3 id="1、人工智能-机器学习-深度学习？"><a href="#1、人工智能-机器学习-深度学习？" class="headerlink" title="1、人工智能=机器学习=深度学习？"></a>1、人工智能=机器学习=深度学习？</h3><p>不！简单来说，人工智能不完全是机器学习，机器学习也不完全是深度学习。他们三者是层层真子集的关系。最简单的例子：人为地定义高矮胖瘦不是机器学习，因为我想怎么定义就怎么定义，同样机器学习中简单的线性回归也不属于深度学习。</p>
-<h3 id="2、机器学习-大数据-数据挖掘？"><a href="#2、机器学习-大数据-数据挖掘？" class="headerlink" title="2、机器学习=大数据=数据挖掘？"></a>2、机器学习=大数据=数据挖掘？</h3><p>同样，他们是不一样的，他们的关系是存在交集。机器学习可以用大数据来训练，也可以用小数据训练，而数据挖掘是需要从数据中发现信息，也不全是用机器学习来做的。</p>
-<h3 id="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："><a href="#3、什么是机器学习，机器学习有什么作用？简单来说，有三点：" class="headerlink" title="3、什么是机器学习，机器学习有什么作用？简单来说，有三点："></a>3、什么是机器学习，机器学习有什么作用？简单来说，有三点：</h3><p>•通过计算机程序根据数据去优化某一个评价指标</p>
-<p>•自动的从数据发现规律, 使用这些规律做出预测</p>
-<p>•根据过去预测未来</p>
-<h3 id="4、机器学习的家族"><a href="#4、机器学习的家族" class="headerlink" title="4、机器学习的家族"></a>4、机器学习的家族</h3><p>总体来说，机器学习有两类：监督式学习和非监督式学习</p>
-<p>监督式学习主要是：分类和回归（训练数据有明确的输入和预期输出或者标签）</p>
-<p>非监督式学习主要是：聚类（训练数据只有输入，没有预期输出）</p>
-<p>监督式学习(分类)可用于：垃圾邮件/短信检测、自动车牌号识别、人脸识别、手写字符识别、语音识别、医疗图片的病症诊断</p>
-<p>监督式学习(回归)可用于：自动为二手车估价、预测股票价格、预测未来气温、自动驾驶</p>
-<p>非监督式机器学习(聚类)可用于：客户分类(市场研究)、用户分组(社交网络)、图像分割、推荐系统、消除歧义(自然语言处理)</p>
-<h3 id="5、做机器学习的流程"><a href="#5、做机器学习的流程" class="headerlink" title="5、做机器学习的流程"></a>5、做机器学习的流程</h3><p>简单来说，一共有8个步骤：数据获取、数据清洗、特征工程、预处理、选择机器学习模型、模型训练、模型调参和模型部署。其中模型调参和模型训练要反复进行，以得到一个表现最好的模型。</p>
-<p>数据预处理包括：特征提取、处理缺失数据、数据定标、数据转换（One-Hot encoding, One/Two/MultiGram, Bag of words, 取对数 ）</p>
-<p>特征提取：比如基于图像进行行人检测，需要提取图像的梯度直方图</p>
-<p>处理数据缺失：以Titanic数据集为例, 部分乘客的年龄, 80%乘客的仓位有缺失，常用的处理方式:</p>
-<ol>
-<li><p>使用均值或者中间值(median)代替数值类型(年龄)的缺失数据</p>
-</li>
-<li><p>使用众数(mode)代替分类数据(性别)的缺失数据</p>
-</li>
-<li><p>使用聚类的方式, 找到相似的数据点, 使用这些相似数据点的均值等替代缺失数据</p>
-</li>
-<li><p>如果某一个特征的数据丢失率太高, 直接丢弃这个特征的数据也许更好</p>
-</li>
-</ol>
-<p>数据定标：主要是数据的归一化和标准化</p>
-<h3 id="课后思考："><a href="#课后思考：" class="headerlink" title="课后思考："></a>课后思考：</h3><p>1、非监督式机器学习(降维)：例如主成分分析PCA</p>
-<p>2、非监督式机器学习(异常检测)：对不匹配预期模式的识别。异常也被称为离群值、新奇、噪声、偏差和例外</p>
-<p>3、强化学习：基于环境而行动，以取得最大化的预期利益. 强化学习和标准的监督式学习之间的区别在于, 训练数据没有标签，也不需要精确校正每一次优化的行为</p>
-<p>4、强化学习的应用：AlphaGo 下棋、电子游戏、个性化推荐系统、交通灯控制、在线广告投标、机器人控制</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -1877,6 +1195,10 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1900,8 +1222,17 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         
 		<div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1955,6 +1286,22 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention"><span class="nav-number">1.</span> <span class="nav-text">Attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用决策树和随机森林预测员工离职率"><span class="nav-number">2.</span> <span class="nav-text">使用决策树和随机森林预测员工离职率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#获取数据"><span class="nav-number">3.</span> <span class="nav-text">获取数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据预处理"><span class="nav-number">4.</span> <span class="nav-text">数据预处理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分析数据"><span class="nav-number">4.1.</span> <span class="nav-text">分析数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关性分析"><span class="nav-number">4.2.</span> <span class="nav-text">相关性分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进行-T-Test"><span class="nav-number">4.2.1.</span> <span class="nav-text">进行 T-Test</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Decision-Tree-V-S-Random-Forest"><span class="nav-number">4.3.</span> <span class="nav-text">Decision Tree V.S. Random Forest</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ROC-图"><span class="nav-number">4.4.</span> <span class="nav-text">ROC 图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通过决策树分析不同的特征的重要性"><span class="nav-number">4.5.</span> <span class="nav-text">通过决策树分析不同的特征的重要性</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -2088,6 +1435,10 @@ weighted avg       0.98      0.98      0.98      2250</code></pre><h2 id="ROC-�
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

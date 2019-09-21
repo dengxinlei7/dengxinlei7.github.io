@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="State University of New York at Albany, Department of Environmental Health Science">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany library(survminer)library(s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MS project">
+<meta property="og:url" content="http://yoursite.com/2019/09/21/MS-project/index.html">
 <meta property="og:site_name" content="Xinlei Deng&#39;s project repository">
-<meta property="og:description" content="State University of New York at Albany, Department of Environmental Health Science">
+<meta property="og:description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany library(survminer)library(s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-19T08:29:48.743Z">
+<meta property="og:updated_time" content="2019-09-21T19:38:46.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="State University of New York at Albany, Department of Environmental Health Science">
+<meta name="twitter:title" content="MS project">
+<meta name="twitter:description" content="AttentionIf adopted, please cite the author in the acknowledgement.author:Xinlei Deng, PhD,Department of Environmental Health Science,State University of New York at Albany library(survminer)library(s">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/21/MS-project/">
 
 
 
 
 
-  <title>about | Xinlei Deng's project repository</title>
+  <title>MS project | Xinlei Deng's project repository</title>
   
 
 
@@ -260,33 +260,184 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/21/MS-project/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xinlei Deng">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xinlei Deng's project repository">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">MS project</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-21T14:19:30-04:00">
+                2019-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Rcode/" itemprop="url" rel="index">
+                    <span itemprop="name">Rcode</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/09/21/MS-project/" class="leancloud_visitors" data-flag-title="MS project">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h1><p>If adopted, please cite the author in the acknowledgement.<br>author:<br>Xinlei Deng, PhD,<br>Department of Environmental Health Science,<br>State University of New York at Albany</p>
+<p>library(survminer)<br>library(survival)<br>library(rms)<br>library(tidyverse)</p>
+<h1 id="simple-summray-of-survival-data"><a href="#simple-summray-of-survival-data" class="headerlink" title="simple summray of survival data"></a>simple summray of survival data</h1><p>model=survfit(Surv(time,y)~1,data=data)<br>summary(model,times=365)<br>summary(model,times=365<em>3)<br>summary(model,times=365</em>5)<br>summary(model,times=365*10)</p>
+<h1 id="univariate-analysis"><a href="#univariate-analysis" class="headerlink" title="univariate analysis"></a>univariate analysis</h1><p>data[c(4,5,7,8,11:23,25:27,42:44)] &lt;- lapply(data[c(4,5,7,8,11:23,25:27,42:44)],as.factor)<br>output=NULL<br>for(i in 4:ncol(data)){<br>    uni1=coxph(Surv(time,y)~data[,i],data = data)<br>    med=summary(uni1)<br>    b=sprintf(“%.3f”,round(med$conf.int[,1],3))<br>    c=sprintf(“%.3f”,round(med$conf.int[,3],3))<br>    d=sprintf(“%.3f”,round(med$conf.int[,4],3))<br>    pvalue=sprintf(“%.3f”,med$waldtest[3])<br>    e &lt;- paste0(b,”(“,c,”, “,d,”)”)<br>    a &lt;- colnames(data)[i] %&gt;% cbind(.,e) %&gt;%cbind(.,NA)<br>    colnames(a) &lt;- c(‘variables’,’HR(95%CI)’,’pvalue’)<br>    a[,3][nrow(a)] &lt;- pvalue<br>    output=rbind(output,a)<br>    }<br>write.csv(output,”univariate analysis.csv”,row.names=F)</p>
+<h1 id="multivariate-analysis"><a href="#multivariate-analysis" class="headerlink" title="multivariate analysis"></a>multivariate analysis</h1><p>library(mice)<br>library(norm)<br>imp &lt;- mice(data[c(2,3,a)],seed = 123,maxit = 50,m=10)<br>med=Surv(time, y) ~ X1+X2+X3<br>imp.data &lt;- as.list(1:10)<br>for (i in 1:10) {<br>  imp.data[[i]] &lt;- complete(imp,action = i)<br>}<br>imp.cox &lt;- lapply(imp.data, FUN=function(u){<br>  coxph(formula = med,data = u)})<br>imp.parmmat &lt;- sapply(imp.cox,coefficients)<br>minparm &lt;- apply(imp.parmmat,1,min)<br>maxparm &lt;- apply(imp.parmmat,1,max)<br>imp.parms &lt;- lapply(imp.cox,coefficients)<br>imp.ses &lt;- lapply(imp.cox,FUN=function(u){<br>   sqrt(diag(u$var))})<br>mi.parms &lt;- mi.inference(imp.parms,imp.ses,confidence=0.95)<br>mi.results &lt;- cbind(exp(mi.parms$est),mi.parms$std.err,mi.parms$lower,mi.parms$upper,<br>                    mi.parms$df,mi.parms$signif,minparm,maxparm,mi.parms$fminf)<br>colnames(mi.results) &lt;- c(“Est”,”StdErr”,”Lower”,”Upper”,”DF”,”P-values”,”Min”,”Max”,”fminf”)<br>mi.results<br>write.csv(mi.results,’Multivariate analysis for Y.csv’)</p>
+<p>data1 &lt;- complete(imp,action = 2)<br>a1=selectCox(med,data=data1)<br>a1</p>
+<h1 id="nomogram"><a href="#nomogram" class="headerlink" title="nomogram"></a>nomogram</h1><p>dd&lt;-datadist(data1)<br>options(datadist=”dd”)<br>outcome.time=data1$time<br>outcome=data1$y<br>f=cph(med,data = data1,x=T,y=T,surv=T,time.inc=1)<br>nom&lt;-nomogram(f,fun=list(function(x) surv(360<em>5,x),function(x) surv(360</em>10,x)),<br>fun.at=c(.01,seq(.1,.9,by=.2),.95,.99,.999),<br>lp=F,<br>funlabel=c(“5 year outcome probability”,”10 year outcome probability”))<br>tiff(“Nomo-outcome.tiff”,type=”cairo”,units=”in”,width=10,height=9,pointsize=12,res=100)<br>plot(nom)<br>dev.off()</p>
+<h1 id="c-index"><a href="#c-index" class="headerlink" title="c_index"></a>c_index</h1><p>nomo_pre1&lt;-predict(f)<em>(-1)<br>c_index=rcorrcens(Surv(OS.time,OS)~nomo_pre1)<br>a=round(c_index[1]+1.96</em>c_index[4],2)<br>b=round(c_index[1]-1.96*c_index[4],2)<br>c=round(c_index[1],2)<br>paste(c,”(“,b,”, “,a,”)”,sep=””)</p>
+<h1 id="calibrate"><a href="#calibrate" class="headerlink" title="calibrate"></a>calibrate</h1><p>set.seed(666)<br>f=cph(med,data = data1,x=T,y=T,surv=T,time.inc=3<em>365)<br>cal1&lt;-calibrate(f,cmethod=”KM”,method=”boot”,u=3</em>365,m=round(nrow(data1)/5),B=1000)<br>tiff(“Nomo-outcomecalibrate3.tiff”,type=”cairo”,units=”in”,width=10,height=7,pointsize=12,res=100)<br>plot(cal1,lwd=2,lty=1,errbar.col=c(rgb(0,118,192,maxColorValue=255)),xlim=c(0.5,0.95),ylim=c(0.5,1),<br>     xlab=”Nomogram-Predicted Probability of 3-Year Survival (%)”,ylab=”Observed 3-Year Survival (%)”,<br>     col=c(rgb(192,98,83,maxColorValue=255)))<br>lines(cal1[,c(“mean.predicted”,”KM”)],type=”b”,lwd=2,col=c(rgb(192,98,83,maxColorValue=255)),pch=16)<br>abline(0,1,lty=3,lwd=2,col=c(rgb(0,118,192,maxColorValue=255)))<br>dev.off()</p>
+<h1 id="survival-plot"><a href="#survival-plot" class="headerlink" title="survival plot"></a>survival plot</h1><p>model=survfit(Surv(time,y)~x,data=data)<br>pic=ggsurvplot(model,data=data,font.tickslab=20,font.legend=20,fun=”pct”,surv.scale=”default”,conf.int.fill=NA,legend=c(0.75,0.4),legend.title=””,break.x.by=12,legend.labs=c(“x1”,”x2”),<br>risk.table=”nrisk_cumcensor”,risk.table.fontsize=5,palette = “jco”,tables.height = 0.2, risk.table.x.text = FALSE,risk.table.y.text = FALSE,<br>tables.theme = theme_cleantable())</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/19/overview of machine-learning/" rel="next" title="overview of machine-learning">
+                <i class="fa fa-chevron-left"></i> overview of machine-learning
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/21/school-project/" rel="prev" title="school project">
+                school project <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -322,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         
 		<div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -377,6 +537,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Attention"><span class="nav-number">1.</span> <span class="nav-text">Attention</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#simple-summray-of-survival-data"><span class="nav-number">2.</span> <span class="nav-text">simple summray of survival data</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#univariate-analysis"><span class="nav-number">3.</span> <span class="nav-text">univariate analysis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#multivariate-analysis"><span class="nav-number">4.</span> <span class="nav-text">multivariate analysis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nomogram"><span class="nav-number">5.</span> <span class="nav-text">nomogram</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#c-index"><span class="nav-number">6.</span> <span class="nav-text">c_index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#calibrate"><span class="nav-number">7.</span> <span class="nav-text">calibrate</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#survival-plot"><span class="nav-number">8.</span> <span class="nav-text">survival plot</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
